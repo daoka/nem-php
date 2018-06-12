@@ -158,6 +158,6 @@ class Transaction
 
         //XXX include Error checks
         $object = json_decode($response, true);
-        return $this->createTransactionModel($object['data']); //XXX brr => error/content validation first
+        return $this->createTransactionModel($object); //XXX brr => error/content validation first
     }
 }
